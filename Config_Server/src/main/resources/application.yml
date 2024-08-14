@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: Config_Server
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: ${HOME}/Desktop/Projeto/Config_Server
+server:
+  port: 8288
+  servlet:
+    context-path: /config
