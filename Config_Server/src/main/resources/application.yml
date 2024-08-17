@@ -1,14 +1,18 @@
 spring:
   application:
-    name: Config_Server
-  profiles:
-    active: native
+    name: config-server
   cloud:
     config:
       server:
         native:
-          search-locations: ${HOME}/Desktop/Projeto/Config_Server
+          search-locations: file:///config-repo # Caminho para o repositório montado no Docker
+  eureka:
+    client:
+      service-url:
+        defaultZone: http://discovery-server:8761/eureka/ # Nome do serviço Eureka Server no Docker
+
 server:
-  port: 8288
+  port: 8283 # Porta ajustada para coincidir com o `docker-compose.yml`
   servlet:
     context-path: /config
+
