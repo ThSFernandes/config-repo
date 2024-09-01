@@ -1,0 +1,6 @@
+db-url: jdbc:postgresql://db-order:5432/order-database
+db-username: admin
+db-password: admin1234@
+db-baseline-on-migrate: true
+hibernate-ddl-auto: update
+jpa-show-sql: true
