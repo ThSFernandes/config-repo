@@ -1,0 +1,6 @@
+db-url: jdbc:postgresql://db-menu:5432/menu-database
+db-username: thiago
+db-password: thg1234
+db-baseline-on-migrate: true
+hibernate-ddl-auto: update
+jpa-show-sql: true
