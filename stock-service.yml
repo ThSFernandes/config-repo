@@ -1,4 +1,4 @@
-db-url: jdbc:postgresql://db-stock:5433/stock-database
+db-url: jdbc:postgresql://db-stock:5432/stock-database
 db-username: admin
 db-password: admin1234@
 db-baseline-on-migrate: true
